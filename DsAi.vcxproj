@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{99b0ecea-8c1a-4e94-89c6-24c30a753565}</ProjectGuid>
+    <RootNamespace>DsAi</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\ncnn+\opencv-4.11.0\bulid\install\include;D:\NCNN\ncnn\x64\include;D:\NCNN\vulkan\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\ncnn+\opencv-4.11.0\bulid\install\x64\vc17\staticlib;D:\NCNN\ncnn\x64\lib;D:\NCNN\vulkan\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\VisualStudionwe\DsAi\DsAi\opencv\include;D:\VisualStudionwe\DsAi\DsAi\ncnn\x64\include;D:\VisualStudionwe\DsAi\DsAi\Vulkan\Include;D:\VisualStudionwe\DsAi\DsAi\ncnn\asio\include;D:\VisualStudionwe\DsAi\DsAi\yidong;D:\VisualStudionwe\DsAi\DsAi\yidong\CH9329;D:\VisualStudionwe\DsAi\DsAi\yidong\makcu_n\include;D:\VisualStudionwe\DsAi\DsAi\eigen3;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\VisualStudionwe\DsAi\DsAi\opencv\x64\vc17\staticlib;D:\VisualStudionwe\DsAi\DsAi\ncnn\x64\lib;D:\VisualStudionwe\DsAi\DsAi\Vulkan\Lib;D:\VisualStudionwe\DsAi\DsAi\yidong\makcu_n;$(LibraryPath)</LibraryPath>
+    <TargetName>ncnnnet</TargetName>
+    <OutDir>..\x64\Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libjpeg-turbo.lib;libopenjp2.lib;libpng.lib;opencv_world4110.lib;zlib.lib;ncnn.lib;GenericCodeGen.lib;glslang.lib;MachineIndependent.lib;OGLCompiler.lib;OSDependent.lib;SPIRV.lib;vulkan-1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;CPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)opencv\x64\vc17\staticlib;$(ProjectDir)yidong\makcu_n\include;$(ProjectDir)yidong\CH9329;$(ProjectDir)Vulkan\Include;$(ProjectDir)eigen3;$(ProjectDir)yidong;$(ProjectDir)ncnn\asio\include;$(ProjectDir)opencv\include;$(ProjectDir)ncnn\x64\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libjpeg-turbo.lib;libopenjp2.lib;opencv_world4110.lib;libpng.lib;ncnn.lib;GenericCodeGen.lib;glslang.lib;MachineIndependent.lib;OGLCompiler.lib;OSDependent.lib;SPIRV.lib;vulkan-1.lib;d3d11.lib;dxgi.lib;cfgmgr32.lib;Makcu.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalLibraryDirectories>$(ProjectDir)yidong\makcu_n;$(ProjectDir)Vulkan\Lib;$(ProjectDir)ncnn\x64\lib;$(ProjectDir)opencv\x64\vc17\staticlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AILuj1.h" />
+    <ClInclude Include="cap.h" />
+    <ClInclude Include="cap_dx.h" />
+    <ClInclude Include="cap_gdi.h" />
+    <ClInclude Include="ini.h" />
+    <ClInclude Include="ini库.h" />
+    <ClInclude Include="kaerman.hpp" />
+    <ClInclude Include="luj.h" />
+    <ClInclude Include="mokuai.h" />
+    <ClInclude Include="PID.h" />
+    <ClInclude Include="RecoilController.h" />
+    <ClInclude Include="yidong\aes_functions.h" />
+    <ClInclude Include="yidong\cat_n\cat_net.h" />
+    <ClInclude Include="yidong\cat_o\cat_o.h" />
+    <ClInclude Include="yidong\cat_t\cat_t.h" />
+    <ClInclude Include="yidong\CH9329\CH9329.h" />
+    <ClInclude Include="yidong\ghub\Ghub.h" />
+    <ClInclude Include="yidong\HidTable.h" />
+    <ClInclude Include="yidong\km_b\km_b.h" />
+    <ClInclude Include="yidong\km_n\km_n.h" />
+    <ClInclude Include="yidong\km_p\cmd.h" />
+    <ClInclude Include="yidong\km_p\hid.h" />
+    <ClInclude Include="yidong\km_p\key.h" />
+    <ClInclude Include="yidong\km_p\km_p.h" />
+    <ClInclude Include="yidong\mobile.h" />
+    <ClInclude Include="yidong\send\Send.h" />
+    <ClInclude Include="yolo.h" />
+    <ClInclude Include="yolov5.h" />
+    <ClInclude Include="yolox.h" />
+    <ClInclude Include="参数管理器.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="参数结构体.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="提前量.h" />
+    <ClInclude Include="日志.h" />
+    <ClInclude Include="目标筛选器.h" />
+    <ClInclude Include="目标选择.h" />
+    <ClInclude Include="贝塞尔随机.h" />
+    <ClInclude Include="配置管理器.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AILuj1.cpp" />
+    <ClCompile Include="cap.cpp" />
+    <ClCompile Include="cap_dx.cpp" />
+    <ClCompile Include="cap_gdi.cpp" />
+    <ClCompile Include="ini.c" />
+    <ClCompile Include="ini库.cpp" />
+    <ClCompile Include="luj.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PID.cpp" />
+    <ClCompile Include="yidong\aes_functions.cpp" />
+    <ClCompile Include="yidong\cat_n\cat_net.cpp" />
+    <ClCompile Include="yidong\cat_o\cat_o.cpp" />
+    <ClCompile Include="yidong\cat_t\cat_t.cpp" />
+    <ClCompile Include="yidong\CH9329\CH9329.cpp" />
+    <ClCompile Include="yidong\ghub\Ghub.cpp" />
+    <ClCompile Include="yidong\km_n\km_n.cpp" />
+    <ClCompile Include="yidong\km_p\hid.cpp" />
+    <ClCompile Include="yidong\km_p\key.cpp" />
+    <ClCompile Include="yidong\km_p\km_p.cpp" />
+    <ClCompile Include="yidong\mobile.cpp" />
+    <ClCompile Include="yidong\send\Send.cpp" />
+    <ClCompile Include="yolo.cpp" />
+    <ClCompile Include="yolov5.cpp" />
+    <ClCompile Include="yolox.cpp" />
+    <ClCompile Include="参数管理器.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="提前量.cpp" />
+    <ClCompile Include="目标筛选器.cpp" />
+    <ClCompile Include="目标选择.cpp" />
+    <ClCompile Include="贝塞尔随机.cpp" />
+    <ClCompile Include="配置管理器.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="截图">
+      <UniqueIdentifier>{a2ec4871-0557-421c-a803-bdccc35538be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="推理">
+      <UniqueIdentifier>{5266a12b-e4c7-46c9-bba3-71187209ff0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="移动">
+      <UniqueIdentifier>{e9e64411-9a4d-4d85-8574-e23462be3481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="配置">
+      <UniqueIdentifier>{109728fa-ca6a-4c43-abd1-80a612f9048a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="杂项">
+      <UniqueIdentifier>{af6b8bd0-fbd5-4e90-95b2-d1bda67fa03d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="配置\ini">
+      <UniqueIdentifier>{03d18c3d-5363-4be0-8a31-3ce714a5ce40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="目标选择">
+      <UniqueIdentifier>{6b843306-078c-488c-9ad9-1c8bfd993037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="目标选择\筛选">
+      <UniqueIdentifier>{7e6f761a-4b1f-47d3-a6ef-a55c76c1b877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="目标选择\选择">
+      <UniqueIdentifier>{7d8993e0-bd3f-49c1-a410-27ac1c9e6579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="轨迹">
+      <UniqueIdentifier>{e1803127-e5a2-4f0e-886c-13ebda11d4de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="轨迹\神经轨迹">
+      <UniqueIdentifier>{1cdb47bd-3054-415f-95d7-b38bb479f1fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="控制器">
+      <UniqueIdentifier>{4cba32fd-6056-4db6-9a2f-9d5da4612ea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="控制器\PID">
+      <UniqueIdentifier>{4f8b653c-ab5b-43e2-a9f3-63702b98df38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="控制器\提前量">
+      <UniqueIdentifier>{d9ba517c-b7d2-49eb-8be2-c87f44406583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="压枪">
+      <UniqueIdentifier>{bc5abda1-941a-4802-b094-74880706e7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="轨迹\贝塞尔">
+      <UniqueIdentifier>{fdc61e37-e2e9-43f0-8778-78343e749789}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cap_gdi.h">
+      <Filter>截图</Filter>
+    </ClInclude>
+    <ClInclude Include="cap.h">
+      <Filter>截图</Filter>
+    </ClInclude>
+    <ClInclude Include="cap_dx.h">
+      <Filter>截图</Filter>
+    </ClInclude>
+    <ClInclude Include="yolox.h">
+      <Filter>推理</Filter>
+    </ClInclude>
+    <ClInclude Include="yolo.h">
+      <Filter>推理</Filter>
+    </ClInclude>
+    <ClInclude Include="yolov5.h">
+      <Filter>推理</Filter>
+    </ClInclude>
+    <ClInclude Include="mokuai.h">
+      <Filter>推理</Filter>
+    </ClInclude>
+    <ClInclude Include="ini.h">
+      <Filter>配置\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="ini库.h">
+      <Filter>配置\ini</Filter>
+    </ClInclude>
+    <ClInclude Include="参数管理器.h">
+      <Filter>配置</Filter>
+    </ClInclude>
+    <ClInclude Include="配置管理器.h">
+      <Filter>配置</Filter>
+    </ClInclude>
+    <ClInclude Include="目标选择.h">
+      <Filter>目标选择\选择</Filter>
+    </ClInclude>
+    <ClInclude Include="目标筛选器.h">
+      <Filter>目标选择\筛选</Filter>
+    </ClInclude>
+    <ClInclude Include="luj.h">
+      <Filter>轨迹</Filter>
+    </ClInclude>
+    <ClInclude Include="AILuj1.h">
+      <Filter>轨迹\神经轨迹</Filter>
+    </ClInclude>
+    <ClInclude Include="提前量.h">
+      <Filter>控制器\提前量</Filter>
+    </ClInclude>
+    <ClInclude Include="PID.h">
+      <Filter>控制器\PID</Filter>
+    </ClInclude>
+    <ClInclude Include="RecoilController.h">
+      <Filter>压枪</Filter>
+    </ClInclude>
+    <ClInclude Include="参数结构体.h">
+      <Filter>配置</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\aes_functions.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\HidTable.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\mobile.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\cat_n\cat_net.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\cat_o\cat_o.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\cat_t\cat_t.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\ghub\Ghub.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\km_b\km_b.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\km_n\km_n.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\km_p\cmd.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\km_p\hid.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\km_p\key.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\km_p\km_p.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\send\Send.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+    <ClInclude Include="kaerman.hpp">
+      <Filter>控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="日志.h">
+      <Filter>配置</Filter>
+    </ClInclude>
+    <ClInclude Include="贝塞尔随机.h">
+      <Filter>轨迹\贝塞尔</Filter>
+    </ClInclude>
+    <ClInclude Include="yidong\CH9329\CH9329.h">
+      <Filter>移动</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cap.cpp">
+      <Filter>截图</Filter>
+    </ClCompile>
+    <ClCompile Include="cap_dx.cpp">
+      <Filter>截图</Filter>
+    </ClCompile>
+    <ClCompile Include="cap_gdi.cpp">
+      <Filter>截图</Filter>
+    </ClCompile>
+    <ClCompile Include="yolo.cpp">
+      <Filter>推理</Filter>
+    </ClCompile>
+    <ClCompile Include="yolov5.cpp">
+      <Filter>推理</Filter>
+    </ClCompile>
+    <ClCompile Include="yolox.cpp">
+      <Filter>推理</Filter>
+    </ClCompile>
+    <ClCompile Include="ini.c">
+      <Filter>配置\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="ini库.cpp">
+      <Filter>配置\ini</Filter>
+    </ClCompile>
+    <ClCompile Include="参数管理器.cpp">
+      <Filter>配置</Filter>
+    </ClCompile>
+    <ClCompile Include="配置管理器.cpp">
+      <Filter>配置</Filter>
+    </ClCompile>
+    <ClCompile Include="目标选择.cpp">
+      <Filter>目标选择\选择</Filter>
+    </ClCompile>
+    <ClCompile Include="目标筛选器.cpp">
+      <Filter>目标选择\筛选</Filter>
+    </ClCompile>
+    <ClCompile Include="luj.cpp">
+      <Filter>轨迹</Filter>
+    </ClCompile>
+    <ClCompile Include="AILuj1.cpp">
+      <Filter>轨迹\神经轨迹</Filter>
+    </ClCompile>
+    <ClCompile Include="提前量.cpp">
+      <Filter>控制器\提前量</Filter>
+    </ClCompile>
+    <ClCompile Include="PID.cpp">
+      <Filter>控制器\PID</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\aes_functions.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\mobile.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\cat_n\cat_net.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\cat_o\cat_o.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\cat_t\cat_t.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\ghub\Ghub.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\km_n\km_n.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\km_p\hid.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\km_p\key.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\km_p\km_p.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\send\Send.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+    <ClCompile Include="贝塞尔随机.cpp">
+      <Filter>轨迹\贝塞尔</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yidong\CH9329\CH9329.cpp">
+      <Filter>移动</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
